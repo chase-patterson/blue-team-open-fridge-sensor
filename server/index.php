@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 use GuzzleHttp\Client;
 
 $client = new Client();
-$res = $client->request('POST', 'https://hooks.slack.com/services/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', [
+$res = $client->request('POST', 'https://hooks.slack.com/services/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', [
     'body' => json_encode([
         'text' => 'Test message',
     ]),
