@@ -31,8 +31,8 @@ $res = $client->request('POST', 'https =>//hooks.slack.com/services/T027PP58R/B0
                     ],
                 ],
             ],
+            'image_url' => 'https://i.pinimg.com/originals/64/bf/3c/64bf3c8cf34b05c222882ffc52a14088.jpg',
         ],
-        'image_url' => 'https =>//is5-ssl.mzstatic.com/image/thumb/Purple3/v4/d3/72/5c/d3725c8f-c642-5d69-1904-aa36e4297885/source/256x256bb.jp =>//i.pinimg.com/originals/64/bf/3c/64bf3c8cf34b05c222882ffc52a14088.jpg',
     ]),
     'headers' => ['Content-Type' => 'application/json'],
 ]);
