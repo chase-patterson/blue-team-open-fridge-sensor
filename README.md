@@ -1,0 +1,1 @@
+# blue-team-open-fridge-sensor
