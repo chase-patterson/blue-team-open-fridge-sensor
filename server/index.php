@@ -6,14 +6,14 @@ use GuzzleHttp\Client;
 
 $client = new Client();
 try {
-    $res = $client->request('POST', 'https://hooks.slack.com/services/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', [
+    $res = $client->request('POST', 'https://hooks.slack.com/services/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', [
         'body' => json_encode([
             'text' => 'Yo fridge open',
             'attachments' => [
                 [
-                    'text' => 'Choose a game to play',
-                    'fallback' => 'You are unable to choose a game',
-                    'callback_id' => 'wopr_game',
+                    'text' => 'Whatcha gonna do about it?',
+                    'fallback' => "We're having trouble responding. Please just send a message in the thread",
+                    'callback_id' => 'fridge_status',
                     'color' => '#3AA3E3',
                     'attachment_type' => 'default',
                     'actions' => [
@@ -32,7 +32,6 @@ try {
                         ],
                     ],
                 ],
-                'image_url' => 'https://i.pinimg.com/originals/64/bf/3c/64bf3c8cf34b05c222882ffc52a14088.jpg',
             ],
         ]),
         'headers' => ['Content-Type' => 'application/json'],
